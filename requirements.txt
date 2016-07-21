@@ -1,0 +1,12 @@
+django==1.9
+django-material
+requests
+enum34
+trollius
+futures
+gunicorn
+python-dateutil
+cryptography
+netifaces
+
+
