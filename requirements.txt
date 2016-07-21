@@ -8,5 +8,5 @@ gunicorn
 python-dateutil
 cryptography
 netifaces
-
+django-extensions
 

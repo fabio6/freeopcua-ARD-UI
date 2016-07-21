@@ -2,11 +2,14 @@ Instalación y ejeccución FreeOPCUA para dispositivos Arduino con interfaz web.
 15/07/2016
 
 
+Para una correcta instalación ejecute paso a paso.
+
 1.-REQUERIMIENTOS PREVIOS
-----------------------
+--------------------------
 
 El equipo debe tener instalado algunas librerias y paquetes:
-
+	
+	apt-get update && sudo apt-get upgrade
 	apt-get install build-essential
 	apt-get install python-dev
 	apt-get install libssl-dev
@@ -15,7 +18,7 @@ El equipo debe tener instalado algunas librerias y paquetes:
 
 
 2.-MIGRAR BASES DE DATOS
--------------------------
+--------------------------
 
 Esto hará la sincronización de los modelos con el esquema en la base de datos.
 
