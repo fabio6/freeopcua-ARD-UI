@@ -5,9 +5,12 @@ Instalación y ejeccución FreeOPCUA para dispositivos Arduino con interfaz web.
 1.-REQUERIMIENTOS PREVIOS
 ----------------------
 
-El equipo debe tener instalado pyhton 2.7 y además el paquete pip:
-	
-	apt-get install python-pip
+El equipo debe tener instalado algunas librerias y paquetes:
+
+	apt-get install build-essential
+	apt-get install python-dev
+	apt-get install libssl-dev
+	easy_install pip
 
 
 
@@ -20,11 +23,13 @@ Esto hará la sincronización de los modelos con el esquema en la base de datos.
 
 
 
+
 3.-INSTALACIÓN DE REQUERIMIENTOS
 ---------------------------------
 Esto instalará todos los paquetes necesarios de python.
-	pip installa -r requirements.txt
-
+		
+	pip install -r requirements.txt
+	pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs pip install -U
 
 
 4.-INSTALACIÓN SERVIDOR OPC UA e INTERFAZ COMO SERVICIO DEL SISTEMA 
@@ -32,6 +37,14 @@ Esto instalará todos los paquetes necesarios de python.
 Ejecución siguiento los pasos:
 
 	./install.py
+
+
+
+5.-CREACIÓN DE USUARIO PARA LA INTERFAZ
+----------------------------------------
+
+	./manage.py createsuperuser
+
 
 
 
