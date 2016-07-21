@@ -1,4 +1,4 @@
-Instalación y ejeccución FreeOPCUA para dispositivos Arduino con interfaz web. Solo para equipos DEBIAN.
+Instalación y ejeccución FreeOPCUA para dispositivos Arduino con interfaz web. Instalación unicamente para linux, testeado en Debian.
 15/07/2016
 
 
